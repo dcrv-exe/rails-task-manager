@@ -1,0 +1,17 @@
+<h1>Edit: <%=@edit_task.title%></h1>
+<%= form_for @edit_task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
+<br>
+<button>
+  <%= link_to "Delete", tasks_path %>
+</button>
+<br><br>
+<button>
+  <%= link_to "Cancel", tasks_path %>
+</button>
+<br>
